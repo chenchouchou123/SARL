@@ -3,9 +3,11 @@
 
 
 ## Innovation Points
-![Innovation Point_1](./assets/GEL.pdf)
-![Innovation Point_2](./assets/SLE.pdf)
 
+<p align="center">
+  <img src="./assets/GEL.png" width="45%" /> 
+  <img src="./assets/SLE.png" width="45%" />
+</p>
 
 ## Introduction
 
@@ -13,16 +15,18 @@ Current research on point cloud-based 3D human pose estimation faces notable cha
 
 ### Framework
 
-![framework](./assets/SARL.pdf)
+![framework](./assets/SARL.png)
 
 
 ### Visualizations
 
-![visualization](./assets/vis.pdf)
+![visualization](./assets/vis.png)
 
 ## Code
 Preparation:
 Downloading the SMPL-X model weights from [this website](https://smpl-x.is.tue.mpg.de/) into 'smplx_models' folder.
+
+Our data preprocessing pipeline follows [LiDAR-HMR](https://github.com/soullessrobot/LiDAR-HMR).
 
 Installation:
 ```
@@ -40,7 +44,7 @@ python scripts/main/train.py --dataset sloper4d --cfg configs/pose_15.yaml
 ```
 SARL testing:
 ```
-python scripts/main/test.py --dataset sloper4d --cfg configs/pose_15.yaml
+python scripts/main/test.py --dataset sloper4d --cfg configs/pose_15.yaml --state_dict /path/to/your/file
 ```
 
 ## Related Projects
